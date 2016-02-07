@@ -40,18 +40,10 @@ class GameScene: SKScene {
         self.addChild(hud)
         
         // Add Velocity Gradient //
-        let gradTexture = SKTexture(imageNamed: "velocity-gradient")
-        let gradient = SKSpriteNode(texture: gradTexture, color: UIColor.clearColor(), size: gradTexture.size())
+        let gradient = ThrottleIndicator()
         gradient.position = CGPoint(x: self.size.width * 0.9, y: self.size.height * 0.2)
-        gradient.name = "accel"
         self.addChild(gradient)
         
-        // Add Velocity Indicator //
-        let indicateTexture = SKTexture(imageNamed: "velocity-indicator")
-        self.indicator = SKSpriteNode(texture: indicateTexture, color: UIColor.clearColor(), size: indicateTexture.size())
-        indicator.name = "accel"
-        indicator.zPosition = 2
-        gradient.addChild(indicator)
         
         self.physicsWorld.gravity = CGVectorMake(0.0, 0.0)
         
@@ -130,13 +122,13 @@ class GameScene: SKScene {
 //        let firstTouch = touches.first
 //        let location = (firstTouch?.locationInNode(self))!
 //        cam.position = location
-        for touch in touches {
-            let loc = touch.locationInNode(self)
-            let node = self.nodeAtPoint(loc)
-            if (node.name == "accel") {
-                self.indicator.setScale(1.1)
-            }
-        }
+//        for touch in touches {
+//            let loc = touch.locationInNode(self)
+//            let node = self.nodeAtPoint(loc)
+//            if (node.name == "accel") {
+//                self.indicator.setScale(1.1)
+//            }
+//        }
         
     }
     
@@ -146,7 +138,7 @@ class GameScene: SKScene {
    
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
 
-        self.indicator.setScale(1.0)
+//        self.indicator.setScale(1.0)
 
     }
     override func update(currentTime: CFTimeInterval) {

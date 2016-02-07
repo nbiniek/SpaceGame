@@ -17,6 +17,7 @@
 		4FB4C4B61C49C15B00ED2B70 /* Earth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4C4B51C49C15B00ED2B70 /* Earth.swift */; };
 		4FB4C4B81C49C16400ED2B70 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4C4B71C49C16400ED2B70 /* HUD.swift */; };
 		4FB4C4BC1C49C2BC00ED2B70 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4C4BB1C49C2BC00ED2B70 /* Space.swift */; };
+		4FF7AD8F1C65D68A003F375B /* ThrottleIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF7AD8E1C65D68A003F375B /* ThrottleIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4FB4C4B51C49C15B00ED2B70 /* Earth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Earth.swift; path = ../../SpaceAdventure/SpaceAdventure/Earth.swift; sourceTree = "<group>"; };
 		4FB4C4B71C49C16400ED2B70 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HUD.swift; path = ../../SpaceAdventure/SpaceAdventure/HUD.swift; sourceTree = "<group>"; };
 		4FB4C4BB1C49C2BC00ED2B70 /* Space.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
+		4FF7AD8E1C65D68A003F375B /* ThrottleIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrottleIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				4F483C581C44728000F48919 /* AppDelegate.swift */,
 				4F483C5C1C44728000F48919 /* GameScene.swift */,
+				4FF7AD8E1C65D68A003F375B /* ThrottleIndicator.swift */,
 				4FB4C4BB1C49C2BC00ED2B70 /* Space.swift */,
 				4FB4C4B31C49C15100ED2B70 /* Player.swift */,
 				4FB4C4B51C49C15B00ED2B70 /* Earth.swift */,
@@ -155,6 +158,7 @@
 				4FB4C4BC1C49C2BC00ED2B70 /* Space.swift in Sources */,
 				4FB4C4B61C49C15B00ED2B70 /* Earth.swift in Sources */,
 				4FB4C4B81C49C16400ED2B70 /* HUD.swift in Sources */,
+				4FF7AD8F1C65D68A003F375B /* ThrottleIndicator.swift in Sources */,
 				4F483C5F1C44728000F48919 /* GameViewController.swift in Sources */,
 				4F483C591C44728000F48919 /* AppDelegate.swift in Sources */,
 			);
