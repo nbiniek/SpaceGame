@@ -7,20 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0E9D9A1CC9D1B600528234 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9D971CC9D1B600528234 /* HUD.swift */; };
+		4F0E9D9B1CC9D1B600528234 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9D981CC9D1B600528234 /* Player.swift */; };
+		4F0E9D9C1CC9D1B600528234 /* Earth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9D991CC9D1B600528234 /* Earth.swift */; };
 		4F483C591C44728000F48919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F483C581C44728000F48919 /* AppDelegate.swift */; };
 		4F483C5D1C44728000F48919 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F483C5C1C44728000F48919 /* GameScene.swift */; };
 		4F483C5F1C44728000F48919 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F483C5E1C44728000F48919 /* GameViewController.swift */; };
 		4F483C621C44728000F48919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F483C601C44728000F48919 /* Main.storyboard */; };
 		4F483C641C44728000F48919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F483C631C44728000F48919 /* Assets.xcassets */; };
 		4F483C671C44728000F48919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F483C651C44728000F48919 /* LaunchScreen.storyboard */; };
-		4FB4C4B41C49C15200ED2B70 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4C4B31C49C15100ED2B70 /* Player.swift */; };
-		4FB4C4B61C49C15B00ED2B70 /* Earth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4C4B51C49C15B00ED2B70 /* Earth.swift */; };
-		4FB4C4B81C49C16400ED2B70 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4C4B71C49C16400ED2B70 /* HUD.swift */; };
 		4FB4C4BC1C49C2BC00ED2B70 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4C4BB1C49C2BC00ED2B70 /* Space.swift */; };
 		4FF7AD8F1C65D68A003F375B /* ThrottleIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF7AD8E1C65D68A003F375B /* ThrottleIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F0E9D971CC9D1B600528234 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		4F0E9D981CC9D1B600528234 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		4F0E9D991CC9D1B600528234 /* Earth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Earth.swift; sourceTree = "<group>"; };
 		4F483C551C44728000F48919 /* Space.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Space.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F483C581C44728000F48919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F483C5C1C44728000F48919 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -29,9 +32,6 @@
 		4F483C631C44728000F48919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F483C661C44728000F48919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F483C681C44728000F48919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FB4C4B31C49C15100ED2B70 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = ../../SpaceAdventure/SpaceAdventure/Player.swift; sourceTree = "<group>"; };
-		4FB4C4B51C49C15B00ED2B70 /* Earth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Earth.swift; path = ../../SpaceAdventure/SpaceAdventure/Earth.swift; sourceTree = "<group>"; };
-		4FB4C4B71C49C16400ED2B70 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HUD.swift; path = ../../SpaceAdventure/SpaceAdventure/HUD.swift; sourceTree = "<group>"; };
 		4FB4C4BB1C49C2BC00ED2B70 /* Space.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 		4FF7AD8E1C65D68A003F375B /* ThrottleIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrottleIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,13 +66,13 @@
 		4F483C571C44728000F48919 /* Space */ = {
 			isa = PBXGroup;
 			children = (
+				4F0E9D971CC9D1B600528234 /* HUD.swift */,
+				4F0E9D981CC9D1B600528234 /* Player.swift */,
+				4F0E9D991CC9D1B600528234 /* Earth.swift */,
 				4F483C581C44728000F48919 /* AppDelegate.swift */,
 				4F483C5C1C44728000F48919 /* GameScene.swift */,
 				4FF7AD8E1C65D68A003F375B /* ThrottleIndicator.swift */,
 				4FB4C4BB1C49C2BC00ED2B70 /* Space.swift */,
-				4FB4C4B31C49C15100ED2B70 /* Player.swift */,
-				4FB4C4B51C49C15B00ED2B70 /* Earth.swift */,
-				4FB4C4B71C49C16400ED2B70 /* HUD.swift */,
 				4F483C5E1C44728000F48919 /* GameViewController.swift */,
 				4F483C601C44728000F48919 /* Main.storyboard */,
 				4F483C631C44728000F48919 /* Assets.xcassets */,
@@ -154,12 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FB4C4B41C49C15200ED2B70 /* Player.swift in Sources */,
 				4F483C5D1C44728000F48919 /* GameScene.swift in Sources */,
 				4FB4C4BC1C49C2BC00ED2B70 /* Space.swift in Sources */,
-				4FB4C4B61C49C15B00ED2B70 /* Earth.swift in Sources */,
-				4FB4C4B81C49C16400ED2B70 /* HUD.swift in Sources */,
+				4F0E9D9C1CC9D1B600528234 /* Earth.swift in Sources */,
 				4FF7AD8F1C65D68A003F375B /* ThrottleIndicator.swift in Sources */,
+				4F0E9D9A1CC9D1B600528234 /* HUD.swift in Sources */,
+				4F0E9D9B1CC9D1B600528234 /* Player.swift in Sources */,
 				4F483C5F1C44728000F48919 /* GameViewController.swift in Sources */,
 				4F483C591C44728000F48919 /* AppDelegate.swift in Sources */,
 			);
