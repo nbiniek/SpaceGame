@@ -14,17 +14,15 @@ class ThrottleIndicator: SKSpriteNode {
     var indicator: SKSpriteNode!
     
     init() {
+        // Setup Gradient Texture //
         let texture = SKTexture(imageNamed: "velocity-gradient")
         super.init(texture: texture, color: UIColor.clearColor(), size: texture.size())
         self.userInteractionEnabled = true
-        self.name = "accel"
         
         // Add Velocity Indicator //
         let indicateTexture = SKTexture(imageNamed: "velocity-indicator")
         indicator = SKSpriteNode(texture: indicateTexture, color: UIColor.clearColor(), size: indicateTexture.size())
-        indicator.name = "accel"
         indicator.zPosition = 2
-        //findicator.userInteractionEnabled = true
         self.addChild(indicator)
     }
     
@@ -33,26 +31,19 @@ class ThrottleIndicator: SKSpriteNode {
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        /* Called when a touch begins */
-        
-//        let firstTouch = touches.first
-//        let location = (firstTouch?.locationInNode(self))!
-//        for touch in touches {
-//            let loc = touch.locationInNode(self)
-//            let node = self.nodeAtPoint(loc)
-//            if (node.name == "accel") {
-                self.indicator.setScale(1.1)
-//            }
-//        }
-        
+        self.indicator.setScale(1.1)
     }
+    
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-       //
+        for touch in touches {
+            if(-60.0 ... 60.0 ~= touch.locationInNode(self).y){
+                self.indicator.position = CGPoint(x:0.0,y: touch.locationInNode(self).y)
+            }
+        }
     }
+    
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        
         self.indicator.setScale(1.0)
-        
     }
     
 }
